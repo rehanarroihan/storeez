@@ -1,0 +1,2 @@
+-dontwarn net.sqlcipher.**
+-dontwarn net.zetetic.**
