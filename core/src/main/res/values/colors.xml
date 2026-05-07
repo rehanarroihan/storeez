@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="B700">#051264</color>
+    <color name="B600">#061786</color>
+    <color name="B500">#081DA7</color>
+    <color name="B400">#0922C3</color>
+    <color name="B200">#C6CDF8</color>
+    <color name="B150">#ECEEFE</color>
+    <color name="B100">#F5F6FE</color>
+    <color name="Z000">#FFFFFF</color>
+    <color name="D800">#212529</color>
+    <color name="D700">#343A40</color>
+    <color name="D600">#495057</color>
+    <color name="D500">#6C757D</color>
+    <color name="D400">#CED4DA</color>
+    <color name="D300">#DEE2E6</color>
+    <color name="D200">#F3F5F6</color>
+    <color name="D100">#F8F9FA</color>
+    <color name="S600">#EC3F13</color>
+    <color name="S500">#E85D04</color>
+    <color name="S400">#FF931F</color>
+    <color name="S300">#FAEDCD</color>
+    <color name="S100">#FFFBEE</color>
+    <color name="R600">#A21112</color>
+    <color name="R500">#C30E0E</color>
+    <color name="R400">#E40B0B</color>
+    <color name="R100">#FFF0F3</color>
+    <color name="green1">#219653</color>
+    <color name="green1_low_opacity">#edfbf3</color>
+    <color name="green_light">#EAFAF1</color>
+    <color name="mint_cream">#F1F7EE</color>
+    <color name="dartmouth_green">#1A7431</color>
+    <color name="forest_green">#208B3A</color>
+
+    <color name="page_background_blue">@color/B100</color>
+    <color name="transparent">@android:color/transparent</color>
+</resources>
