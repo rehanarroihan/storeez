@@ -1,20 +1,17 @@
 package com.multazamgsd.storeez.presentation.detail
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
 import com.bumptech.glide.Glide
 import com.google.gson.Gson
-import com.multazamgsd.storeez.R
 import com.multazamgsd.storeez.core.domain.model.Story
 import com.multazamgsd.storeez.core.utils.GeneralHelper.toDateFormat
 import com.multazamgsd.storeez.core.utils.onSuccess
 import com.multazamgsd.storeez.databinding.ActivityDetailStoryBinding
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
@@ -45,9 +42,15 @@ class DetailStoryActivity : AppCompatActivity() {
 
         binding.buttonFavorite.setImageDrawable(
             if (storyData.isFavorite) {
-                ContextCompat.getDrawable(this, com.multazamgsd.storeez.core.R.drawable.ic_favorite_filled)
+                ContextCompat.getDrawable(
+                    this,
+                    com.multazamgsd.storeez.core.R.drawable.ic_favorite_filled
+                )
             } else {
-                ContextCompat.getDrawable(this, com.multazamgsd.storeez.core.R.drawable.ic_favorite_border)
+                ContextCompat.getDrawable(
+                    this,
+                    com.multazamgsd.storeez.core.R.drawable.ic_favorite_border
+                )
             }
         )
         binding.buttonFavorite.setOnClickListener {
@@ -58,9 +61,15 @@ class DetailStoryActivity : AppCompatActivity() {
                     result.onSuccess {
                         binding.buttonFavorite.setImageDrawable(
                             if (it?.isFavorite == true) {
-                                ContextCompat.getDrawable(this@DetailStoryActivity, com.multazamgsd.storeez.core.R.drawable.ic_favorite_filled)
+                                ContextCompat.getDrawable(
+                                    this@DetailStoryActivity,
+                                    com.multazamgsd.storeez.core.R.drawable.ic_favorite_filled
+                                )
                             } else {
-                                ContextCompat.getDrawable(this@DetailStoryActivity, com.multazamgsd.storeez.core.R.drawable.ic_favorite_border)
+                                ContextCompat.getDrawable(
+                                    this@DetailStoryActivity,
+                                    com.multazamgsd.storeez.core.R.drawable.ic_favorite_border
+                                )
                             }
                         )
                         storyData = it!!
